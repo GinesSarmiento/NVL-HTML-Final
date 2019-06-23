@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hotel GuauGuau</title>
+	<style type="text/css">
+		body{
+			font-family: 'Roboto Slab',sans-serif;
+		}
+		nav{
+			position: fixed;
+			top:0;
+			background-color: rgb(31,128,119);
+			width: 100%;
+			height: 50px; 
+			padding-top: 0px;
+			margin:0px 0px 20px -8px;
+		}
+		nav ol{
+			display: block;
+			margin:0 auto 0 auto;
+			min-width: 400px;
+			padding-bottom: 25px;
+			padding-left: 0px;
+		}
+		nav ol li{
+			list-style-type: none;
+			float:left;
+			text-align: center;
+			margin:10px 20px 0px 20px;
+		}
+		nav ol li a{
+			color: white;
+			text-decoration: none;
+		}
+		.ancla:before{
+			display:block;
+			content:" ";
+			margin-top:-10px;
+			height: 10px;
+			visibility: hidden;
+		}
+		h1{
+			font-size: 3em;
+			text-align: center;
+		}
+		#inicio, #nosotros, #servicios, #pricing, #contacto{
+			clear: both;
+			padding: 100px 0px 100px 0px;
+		}
+		#inicio{
+			padding: 100px 0px 100px 0px;
+		}
+		#i-texto{
+			width: 40%;
+			float:left;
+			text-align: center;
+			font-size: 2em;
+		}
+		#i-imagen{
+			width: 40%;
+			float:right;
+			margin-top:200px;
+		}
+		#nosotros{
+			text-align: center;
+		}
+		#equipo div{
+			display: block;
+			float: left;
+			width: 20%;
+			margin:30px 2% 0px 2%;
+		}
+		#equipo div img{
+			width: 80%;
+		}
+		#nosotros p{
+			width: 80%;
+			margin:0px auto 0px auto;
+		}
+		#servicios{
+			text-align: center;
+			margin:0px auto 0px auto;
+			width: 90%;
+			max-width: 1200px;
+		}
+		.servicio{
+			width: 350px;
+			height: 400px;
+			float: left;
+			display: block;
+			padding: 10px 10px 10px 10px;
+		}
+		.s-detalle{
+			padding: 0px 30px 0px 30px;
+		}
+		#pricing{
+			text-align: center;
+		}
+		#p-alojamiento, #p-servicios{
+			width: 40%;
+			margin:0px 4% 0px 4%;
+			min-width: 600px;
+			display: block;
+			float: left;
+		}
+		#p-alojamiento tr:nth-child(even),#p-servicios tr:nth-child(even) 
+		{
+			background-color: #eee;
+		}
+		#p-alojamiento  tr:nth-child(odd), #p-servicios  tr:nth-child(odd) 
+		{
+			background-color: #fff;
+		}
+		table caption{
+			font-size: 2em;
+			margin-bottom: 30px;
+		}
+		#datos, #formulario{
+			width: 40%;
+			margin:0px 4% 0px 4%;
+			min-width: 600px;
+			display: block;
+			float: left;
+			text-align: center;
+		}
+		.etiqueta, .entrada{
+			display: block;
+			width: 150px;
+			margin:10px auto 10px auto;
+		}
+		#mensaje{
+			width: 350px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<nav id="menu">
+		<ol>
+			<li><a href="#nosotros">¿Quienes somos?</a></li>
+			<li><a href="#servicios">Nuestros servicios</a></li>
+			<li><a href="#pricing">Pricing</a></li>
+			<li><a href="#contacto">Contacto</a></li>
+		</ol>
+	</nav>
+
+	<div id="inicio">
+		<div id="i-texto">
+			<h1>Hotel GuauGuau</h1>
+			<p><b>Si necesitas un lugar<br>
+			para dejar tu mascota</b></p>
+			<p>cuando te vas de vacaciones,<br>
+				un fin de semana o un día<br>
+				que no puedas estar con él,<br>
+			este es el sitio adecuado</p>
+		</div>
+		<div id="i-imagen">
+			<img src="assets/perro-con-maleta.png" alt="Perro con maleta y collar hawaiano">
+		</div>
+	</div>
+
+	<a class="ancla" name="nosotros"></a>
+	<div id="nosotros">
+		<h1>¿Quienes somos?</h1>
+		<p>En Hotel GuauGuau vamos más allá de ser una simple pensión canina donde tu mascota se pasa el día encerrada en un box.</p>
+		<p>Es un lugar dedicado a la diversión de tus mascotas, donde nuestra prioridad es su cuidado y bienestar, en un ambiente natural que lo hace perfecto para su desarrollo.</p>
+		<p>En nuestra residencia canina podrá jugar, explorar, olfatear e investigar a su antojo, siempre al cuidado de profesionales las 24 horas del día y con personal dedicado a su seguridad.</p>
+		<p><b>Ven a conocernos, te encantarán nuestras instalaciones y te sentirás tranquilo al elegirnos.</b></p>
+		<div id="equipo">
+			<h2>Nuestro equipo</h2>
+			<p>Para estar a la altura de lo que vuestras mascotas se merecen, estamos en formación continua mediante cursos, webseminar, congresos, etc.<br/><b>porque tu mascota es para nosotros como si fuera la nuestra.</b></p>
+			<div class="foto">
+				<img src="assets/laura.jpg" alt="Fotografía de Laura">
+				<p>Laura Gonzalez</p>
+			</div>
+			<div class="foto">
+				<img src="assets/lorena.png" alt="Fotografía de Lorena">
+				<p>Lorena Herrero</p>
+			</div>
+			<div class="foto">
+				<img src="assets/carlos.jpg" alt="Fotografía de Carlos">
+				<p>Carlos Pellitero</p>
+			</div>
+			<div class="foto">
+				<img src="assets/alberto.jpg" alt="Fotografía de Alberto">
+				<p>Alberto Soriano</p>
+			</div>
+		</div>
+	</div>
+
+	<a class="ancla" name="servicios"></a>
+	<div id="servicios">
+		<h1>Nuestros servicios</h1>
+		<div class="servicio">
+			<img src="assets/alojamiento-diurno-y-residencial.jpg" alt="Perro bostezando">
+			<h2 class="s-titulo">Alojamiento</h2>
+			<p class="s-detalle">Ofrecemos tanto alojamiento de día como para estancias prolongadas.</p>
+		</div>
+		<div class="servicio">
+			<img src="assets/recogida-y-entrega-de-la-mascota-en-tu-domicilio.jpg" alt="Perro en una moto">
+			<h2 class="s-titulo">Recogida y entrega de la mascota en tu domicilio</h2>
+			<p class="s-detalle">Para tu comodidad ofrecemos un servicio de recogida y entrega de tu mascota con tarifas muy asequibles.</p>
+		</div>
+		<div class="servicio">
+			<img src="assets/servicio-de-obediencia-y-adiestramiento.jpg" alt="Perro adiestrándose">
+			<h2 class="s-titulo">Adiestramiento</h2>
+			<p class="s-detalle">Si necesitas que tu perro se porte un poco mejor o quieres que le enseñemos algunas órdenes que te faciliten el día a día, pregúntanos por nuestro servicio de adiestramiento.</p>
+		</div>
+		<div class="servicio">
+			<img src="assets/servicio-de-lavado-y-peluqueria.jpg" alt="Perro peinandose">
+			<h2 class="s-titulo">Lavado y peluquería</h2>
+			<p class="s-detalle">Ofrecemos un complejo servicio de estética canina, tu mascota quedará maravillosa.</p>
+		</div>
+		<div class="servicio">
+			<img src="assets/servicio-medico-veterinario-24-horas.jpg" alt="Perro enfermo con una manta en la cabeza">
+			<h2 class="s-titulo">Médico Veterinario 24 horas</h2>
+			<p class="s-detalle">Para la salud de tu mascota y tu tranquilidad contamos con atención y presencia de médico veterinario las 24 horas en servicio de urgencias.</p>
+		</div>
+		<div class="servicio">
+			<img src="assets/tienda-de-productos.jpg" alt="Perro en un supermercado">
+			<h2 class="s-titulo">Tienda de productos</h2>
+			<p class="s-detalle">Tenemos una amplia gama de productos de gran calidad como piensos, colchonetas, camitas, collares, correas, etc. y todo a los mejores precios para tu mascota.</p>
+		</div>
+	</div>
+
+	<a class="ancla" name="pricing"></a>
+	<div id="pricing">
+		<h1>Pricing</h1>
+		<div id="precios">
+			<table id="p-alojamiento">
+				<caption>Alojamiento</caption>
+				<tr>
+					<th>Duración</th>
+					<th>Incluye</th>
+					<th>Precio</th>
+				</tr>
+				<tr>
+					<td>Menos de un día</td>
+					<td>Alojamiento<br/>Vigilancia veterinaria<br/>Seguro de responsabilidad civil</td>
+					<td>5€/hora</td>
+				</tr>
+				<tr>
+					<td>1 día</td>
+					<td>Alojamiento<br/>Vigilancia veterinaria<br/>Seguro de responsabilidad civil<br/>Comidas<br/>Limpieza</td>
+					<td>18€/noche</td>
+				</tr>
+				<tr>
+					<td>1 semana o más</td>
+					<td>Alojamiento<br/>Vigilancia veterinaria<br/>Seguro de responsabilidad civil<br/>Comidas<br/>Limpieza</td>
+					<td>15€/noche</td>
+				</tr>
+				<tr>
+					<td>15 días o más</td>
+					<td>Alojamiento<br/>Vigilancia veterinaria<br/>Seguro de responsabilidad civil<br/>Comidas<br/>Limpieza</td>
+					<td>12€/noche</td>
+				</tr>
+				<tr>
+					<td>1 mes o más</td>
+					<td>Alojamiento<br/>Vigilancia veterinaria<br/>Seguro de responsabilidad civil<br/>1 corte de pelo</td>
+					<td>10€/noche</td>
+				</tr>
+			</table>
+			<table id="p-servicios">
+				<caption>Servicios</caption>
+				<tr>
+					<th>Servicio</th>
+					<th>Precio</th>
+					<th>Precio bono 10 unidades</th>
+				</tr>
+				<tr>
+					<td>Lavado perro grande</td>
+					<td>20€</td>
+					<td>180€</td>
+				</tr>
+				<tr>
+					<td>Lavado perro mediano</td>
+					<td>17€</td>
+					<td>136€</td>
+				</tr>
+				<tr>
+					<td>Lavado perro pequeño</td>
+					<td>15€</td>
+					<td>120€</td>
+				</tr>
+				<<tr>
+					<td>Corte pelo perro grande</td>
+					<td>25€</td>
+					<td>200€</td>
+				</tr>
+				<tr>
+					<td>Corte pelo perro mediano</td>
+					<td>20€</td>
+					<td>180€</td>
+				</tr>
+				<tr>
+					<td>Corte pelo perro pequeño</td>
+					<td>15€</td>
+					<td>120€</td>
+				</tr>
+				<tr>
+					<td>Recogida a domicilio</td>
+					<td>0,30€/Km.</td>
+					<td>No disponible</td>
+				</tr>
+				<tr>
+					<td>Adiestramiento</td>
+					<td>50€/sesión</td>
+					<td>Consultar descuentos</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<a class="ancla" name="contacto"></a>
+	<div id="contacto">
+		<h1>Contacto</h1>
+		<div id="datos">
+			<h2>Datos de contacto</h2>
+			<p>Ctra. Villanueva del Carnero a Antimio km. 1</p>
+			<p>24391 VILLANUEVA DEL CARNERO, León (Spain)</p>
+			<p>Teléfonos: <b>987 28 04 57</b> y <b>616 009 379</b></p>
+			<p>Correo: residencia@residenciacaninaleon.com</p>
+		</div>
+		<div id="formulario">
+			<h2>Déjanos un mensaje y nos pondremos en contacto contigo lo antes posible</h2>
+			<form method="post" action="miservidor.php">
+				<div id="f-nombre">
+					<label class="etiqueta" for="nombre">Nombre:</label>
+					<input class="entrada" type="text" name="nombre">
+				</div>
+				<div id="f-email">
+					<label class="etiqueta" for="email">E-mail:</label>
+					<input class="entrada" type="email" name="email">
+				</div>
+				<div id="f-nombre">
+					<label class="etiqueta" for="telefono">Teléfono:</label>
+					<input class="entrada" type="text" name="telefono">
+				</div>
+				<div id="f-servicio">
+					<label class="etiqueta" for="servicio">Servicio sobre la consulta</label>
+					<select class="entrada" id="servicio">
+						<option  value="alojamiento">Alojamiento</option>
+						<option  value="recogida">Recogida a domicilio</option>
+						<option  value="adiestramiento">Adiestramiento</option>
+						<option  value="lavado">Lavado y peluquería</option>
+						<option  value="veterinario">Veterinario</option>
+						<option  value="tienda">Tienda</option>
+						<option  value="otros">Otros</option>
+					</select>
+				</div>
+				<div id="f-mensaje">
+					<label class="etiqueta" for="mensaje">Deja tu mensaje:</label>
+					<textarea class="entrada" id="mensaje">Escribe aquí tu consulta</textarea>
+				</div>
+				<div id="enviar">
+					<input type="submit" name="Enviar">
+				</div>
+			</form>
+		</div>
+	</div>
+	</html>
